@@ -1,5 +1,11 @@
+.container{
+    display: grid;
+    grid-template-rows: 80vh min-content repeat(2, min-content) 40vw min-content;
+    grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr)[full-end];
+}
+
 .sidebar{
-    background-color: red;
+    background-color: $color-white;
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1 / -1;
 }
@@ -11,7 +17,7 @@
 
 
 .team{
-    background-color:aqua;
+    background-color: $color-navy-blue-1;
     grid-column: col-end 6 / full-end;
 }
 
