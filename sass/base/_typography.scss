@@ -3,4 +3,17 @@
 body{
     font-family: 'Niramit', sans-serif;
     color: $color-black;
+    font-weight: $fw-regular;
+}
+
+.heading-1{
+    font-size: $fs-h1;
+    color: $color-white;
+    line-height: 5.76rem;
+}
+
+.heading-3{
+    font-size: $fs-h5;
+    color: $color-light-brown-2;
+    text-transform: uppercase;
 }

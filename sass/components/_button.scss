@@ -1,0 +1,12 @@
+.btn{
+    border: none;
+    border-radius: 2px;
+    padding: 1.6rem;
+}
+
+.header__btn{
+    background-color: $color-light-brown-2;
+    color: $color-navy-blue-1;
+    font-weight: $fw-bold;
+    text-transform: capitalize;
+}
