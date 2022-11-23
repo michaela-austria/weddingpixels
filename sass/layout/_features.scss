@@ -1,0 +1,39 @@
+.features{
+    margin: 15rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 6rem;
+
+    &__container{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        gap: 1.5rem;
+    }
+
+    &__icon{
+        height: 7rem;
+        width: 7rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__details{
+        display: grid;
+        row-gap: 8px;
+    }
+
+    &__name{
+        font-size: $fs-h5;
+        color: $color-navy-blue-1;
+        font-weight: $fw-bold;
+        line-height: 140%;
+    }
+
+    &__desc{
+        font-size: $fs-base;
+        font-weight: $fw-medium;
+        line-height: 180%;
+    }
+}

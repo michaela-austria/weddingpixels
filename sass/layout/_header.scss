@@ -49,7 +49,9 @@
         justify-items: center;
 
         img{
-            width: 40%;
+            max-height: 2.5rem;
+            max-width: 40%;
+            filter: brightness(90%);
         }
     }
 

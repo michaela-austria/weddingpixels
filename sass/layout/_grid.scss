@@ -22,22 +22,18 @@
 }
 
 .features{
-    background-color:blueviolet;
     grid-column: center-start / center-end;
 }
 
 .gallery{
-    background-color:cadetblue;
     grid-column: full-start / full-end;
 }
 
 .packages{
-    background-color:chartreuse;
     grid-column: center-start / center-end;
 }
 
 .story__pictures{
-    background-color:brown;
     grid-column: full-start / col-end 4;
 }
 

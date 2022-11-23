@@ -1,0 +1,48 @@
+.packages{
+    &__container{
+        display: grid;
+        gap: 2rem;
+    }
+
+    &__img{
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    &__name{
+        font-size: $fs-h6;
+        width: 80%;
+        text-align: center;
+        background-color: $color-light-brown-2;
+        padding: 1rem 1.6rem;
+        justify-self: center;
+        margin-top: -5rem;
+        border-radius: 2px;
+    }
+
+    &__details{
+        font-size: $fs-caption;
+        font-weight: $fw-medium;
+        justify-self: center;
+
+        &>*:not(:last-child){
+            margin-bottom: 1.9rem;
+        }
+    }
+
+    &__list{
+        &::marker{
+            color: $color-maroon;
+            font-size: $fs-h6;
+            font-weight: $fw-semibold;
+        }
+    }
+
+    &__btn{
+        background-color: $color-navy-blue-1;
+        color: $color-white;
+        font-size: $fs-h6;
+        font-weight: $fw-bold;
+        padding: 1.4rem 1.6rem 1.6rem 1.6rem;
+    }
+}
