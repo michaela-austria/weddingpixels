@@ -17,3 +17,11 @@ body{
     color: $color-light-brown-2;
     text-transform: uppercase;
 }
+
+.copyright{
+    font-size: $fs-caption;
+    color: $color-white;
+    font-weight: $fw-medium;
+    text-align: center;
+    margin-top: 5rem;
+}

@@ -53,7 +53,6 @@
 
 
 .story{
-
     &__pictures{
         display: grid;
         grid-template-columns: repeat(7,1fr);
@@ -83,5 +82,38 @@
             position: relative;
             margin-left: 5rem;
         }
+    }
+
+    &__content{
+        padding: 6rem 8vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        
+        .heading-3{
+            color: $color-maroon;
+            line-height: 140%;
+            font-size: $fs-h6;
+        }
+
+        .heading-1{
+            color: $color-black;
+            line-height: 120%;
+            margin-bottom: 6.4rem;
+        }
+    }
+}
+
+
+.sidebar{
+    &__container{
+        width: 5.5rem;
+        display: block;
+        margin: 3rem auto 0;
+    }
+
+    &__logo{
+        width: 100%;
     }
 }

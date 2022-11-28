@@ -1,0 +1,38 @@
+.footer{
+    height: max-content;
+    padding: 8rem;
+    background-color: $color-navy-blue-1;
+
+    &__nav{
+        text-transform: uppercase;
+        list-style: none;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__item{
+        text-align: center;
+    }
+
+    &__link{
+        &:link,
+        &:visited{
+            font-size: $fs-base;
+            font-weight: $fw-medium;
+            text-decoration: none;
+            color: $color-white;
+            display: block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active{
+            background-color: rgba($color-white, 0.5);
+            transform: translateY(-5px);
+            border-radius: 2px;
+        }
+    }
+}

@@ -38,11 +38,10 @@
 }
 
 .story__content{
-    background-color:cornflowerblue;
+    background-color: $color-peach-2;
     grid-column: col-end 4 / full-end;
 }
 
 .footer{
-    background-color:darkgray;
     grid-column: full-start / full-end;
 }

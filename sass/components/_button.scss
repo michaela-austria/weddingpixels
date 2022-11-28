@@ -1,7 +1,8 @@
 .btn{
     border: none;
     border-radius: 2px;
-    padding: 1.6rem;
+    // padding: 1.6rem;
+    padding: 1.7rem 2rem 2.2rem 2rem;
     cursor: pointer;
     font-family: inherit;
 }
@@ -11,4 +12,11 @@
     color: $color-navy-blue-1;
     font-weight: $fw-bold;
     text-transform: capitalize;
+}
+
+.story__btn{
+    background-color: $color-navy-blue-1;
+    color: $color-white;
+    font-size: $fs-h6;
+    font-weight: $fw-semibold;
 }
