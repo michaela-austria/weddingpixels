@@ -90,17 +90,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        @media only screen and (max-width: $bp-laptop) {
+            padding: 6rem 4vw 6rem 8vw;
+        }
         
         .heading-3{
             color: $color-maroon;
             line-height: 140%;
             font-size: $fs-h6;
+
+            @media only screen and (max-width: $bp-laptop) {
+                font-size: $fs-base;
+            }
         }
 
         .heading-1{
             color: $color-black;
             line-height: 120%;
             margin-bottom: 6.4rem;
+
+            @media only screen and (max-width: $bp-laptop) {
+                font-size: $fs-h2;
+            }
         }
     }
 }

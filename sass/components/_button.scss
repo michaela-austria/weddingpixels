@@ -5,6 +5,7 @@
     padding: 1.7rem 2rem 2.2rem 2rem;
     cursor: pointer;
     font-family: inherit;
+    transition: all .2s;
 }
 
 .header__btn{
@@ -12,6 +13,11 @@
     color: $color-navy-blue-1;
     font-weight: $fw-bold;
     text-transform: capitalize;
+
+    &:hover{
+        background-color: $color-light-brown-1;
+        transform: scale(1.1) translateX(1rem);
+    }
 }
 
 .story__btn{
@@ -19,4 +25,12 @@
     color: $color-white;
     font-size: $fs-h6;
     font-weight: $fw-semibold;
+
+    &:hover{
+        background-color: $color-navy-blue-2;
+    }
+
+    @media only screen and (max-width: $bp-laptop) {
+        font-size: $fs-base;
+    }
 }

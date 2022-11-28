@@ -44,5 +44,9 @@
         font-size: $fs-h6;
         font-weight: $fw-bold;
         padding: 1.4rem 1.6rem 1.6rem 1.6rem;
+
+        &:hover{
+            background-color: $color-navy-blue-2;
+        }
     }
 }
