@@ -9,6 +9,10 @@
         margin: 10rem 0;
     }
 
+    @media only screen and (max-width: $bp-mobile-s) {
+        margin: 5rem 0;
+    }
+
     &__container{
         display: grid;
         grid-template-columns: min-content 1fr;
@@ -21,6 +25,11 @@
 
         grid-row: 1 / span 2;
         transform: translateY(-2rem);
+
+        @media only screen and (max-width: $bp-mobile-l) {
+            height: 5rem;
+            width: 5rem;
+        }
 
         img{
             width: 100%;
