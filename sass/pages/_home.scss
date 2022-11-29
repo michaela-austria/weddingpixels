@@ -14,6 +14,16 @@
         display: grid;
         grid-template-columns: max-content;
         row-gap: 1.5rem;
+        
+        @media only screen and (max-width: $bp-tablet) {
+            grid-template-columns: repeat(3, minmax(min-content, max-content));
+            gap: 4rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile-l) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
 
     &__info{
@@ -46,8 +56,13 @@
 .packages{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    column-gap: 4rem;
+    gap: 4rem;
     margin: 10rem 0;
+
+    @media only screen and (max-width: $bp-mobile-l) {
+        margin: 5rem 0;
+    }
+
 }
 
 
@@ -65,22 +80,49 @@
 
         img{
             width: 100%;
+            height: 100%;
             border-radius: 2px;
             box-shadow: 1px 6px 14px 3px rgba($color-navy-blue-1, 0.25);
+
+            @media only screen and (max-width: $bp-tablet) {
+                width: 60%;
+            }
+            
         }
 
         &--img1{
             grid-column: 3/6;
-            grid-row: 2/6;
-            margin-top: -10px;
+            grid-row: 2/7;
+
+            @media only screen and (max-width: $bp-tablet) {
+                margin-top: -20px;
+                grid-row: 2 /-1;
+            }
+
+            @media only screen and (max-width: $bp-mobile-l) {
+                margin-top: -15px;
+            }
         }
 
         &--img2{
             grid-column: 5/8;
-            grid-row: 5/8;
+            grid-row: 5/7;
             width: 110% !important;
             position: relative;
             margin-left: 5rem;
+            margin-top: 5rem;
+
+            @media only screen and (max-width: $bp-laptop) {
+                margin-left: 3.5rem;
+            }
+
+            @media only screen and (max-width: $bp-tablet) {
+                width: 80% !important;
+                grid-row: 3/ span 3;
+                grid-column: 5/ span 3;
+                margin-left: -5rem;
+                // margin-top: 3rem;
+            }
         }
     }
 
@@ -112,6 +154,10 @@
 
             @media only screen and (max-width: $bp-laptop) {
                 font-size: $fs-h2;
+            }
+
+            @media only screen and (max-width: $bp-mobile-l) {
+                margin-bottom: 3rem;
             }
         }
     }

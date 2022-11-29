@@ -10,12 +10,20 @@ body{
     font-size: $fs-h1;
     color: $color-white;
     line-height: 5.76rem;
+
+    @media only screen and (max-width: $bp-mobile-l) {
+        font-size: $fs-h3;
+    }
 }
 
 .heading-3{
     font-size: $fs-h5;
     color: $color-light-brown-2;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-mobile-l) {
+        font-size: $fs-h6;
+    }
 }
 
 .copyright{

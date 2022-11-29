@@ -6,6 +6,11 @@
     cursor: pointer;
     font-family: inherit;
     transition: all .2s;
+
+    @media only screen and (max-width: $bp-mobile-l) {
+        padding: 1rem 1.5rem 1.1rem 1.5rem;
+        font-size: 1.3rem;
+    }
 }
 
 .header__btn{

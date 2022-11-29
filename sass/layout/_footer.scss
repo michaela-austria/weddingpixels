@@ -3,6 +3,10 @@
     padding: 8rem;
     background-color: $color-navy-blue-1;
 
+    @media only screen and (max-width: $bp-mobile-l) {
+        padding: 4rem;
+    }
+
     &__nav{
         text-transform: uppercase;
         list-style: none;
@@ -11,6 +15,10 @@
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         align-items: center;
         gap: 2rem;
+
+        @media only screen and (max-width: $bp-tablet) {
+            gap: 1rem;
+        }
     }
 
     &__item{
@@ -26,6 +34,10 @@
             color: $color-white;
             display: block;
             transition: all .2s;
+
+            @media only screen and (max-width: $bp-mobile-l) {
+                font-size: $fs-caption;
+            }
         }
 
         &:hover,

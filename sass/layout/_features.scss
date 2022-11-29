@@ -5,6 +5,10 @@
     align-items: flex-start;
     gap: 6rem;
 
+    @media only screen and (max-width: $bp-mobile-l) {
+        margin: 10rem 0;
+    }
+
     &__container{
         display: grid;
         grid-template-columns: min-content 1fr;
